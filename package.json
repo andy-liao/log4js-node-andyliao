@@ -1,6 +1,6 @@
 {
-   "name": "log4js",
-   "version": "0.5.6",
+   "name": "log4js-node-andyliao",
+   "version": "0.1.0",
    "description": "Port of Log4js to work with node.",
    "keywords": [
        "logging",
@@ -9,13 +9,13 @@
        "node"
    ],
    "main": "./lib/log4js",
-   "author": "Gareth Jones <gareth.jones@sensis.com.au>",
+   "author": "Andy Liao",
    "repository": {
        "type": "git",
-       "url": "https://github.com/nomiddlename/log4js-node.git"
+       "url": "https://github.com/andy-liao/log4js-node-andyliao.git"
    },
    "bugs": {
-       "url": "http://github.com/nomiddlename/log4js-node/issues"
+       "url": "https://github.com/andy-liao/log4js-node-andyliao"
    },
    "engines": [ "node >=0.6" ],
    "scripts": {
