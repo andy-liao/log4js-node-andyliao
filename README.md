@@ -1,5 +1,28 @@
+
+This is on the base of nomiddlename/log4js-node. I've modified appender "dateFile" which now will delete old log files 
+specifieddays ago. Configure appender "dateFile" as following, then log file filename.2013-02-10 will be delete
+suppose the date is 2013-02-20 when rolling log file.
+
+```javascript
+{
+  appenders: [
+	{
+		"type": "dateFile",
+    	"filename": "your log path",
+    	"pattern": ".yyyy-MM-dd",
+    	"category": "your catetory",
+    	"reserveDays": 10
+  	}
+  ],
+  replaceConsole: true
+}
+```
+
+The following is nomiddlename/log4js-node's README.md.
+
+
 # log4js-node [![Build Status](https://secure.travis-ci.org/nomiddlename/log4js-node.png?branch=master)](http://travis-ci.org/nomiddlename/log4js-node)
-hello
+
 
 This is a conversion of the [log4js](http://log4js.berlios.de/index.html)
 framework to work with [node](http://nodejs.org). I've mainly stripped out the browser-specific code and tidied up some of the javascript. 
